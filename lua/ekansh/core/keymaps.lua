@@ -24,3 +24,12 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
+
+-- Basic Indent Formating
+
+keymap.set("n", "<leader>frm", "gg =G", { desc = "Indents the file correctly" })
+
+-- File Tree
+
+keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Opens File Tree" })
+
