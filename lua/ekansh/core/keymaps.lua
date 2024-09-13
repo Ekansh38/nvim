@@ -27,9 +27,10 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Basic Indent Formating
 
-keymap.set("n", "<leader>frm", "gg =G", { desc = "Indents the file correctly" })
+keymap.set("n", "<leader>si", "gg =G", { desc = "Indents the file correctly" })
 
 -- File Tree
 
 keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Opens File Tree" })
+
 
