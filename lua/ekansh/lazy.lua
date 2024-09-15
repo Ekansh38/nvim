@@ -11,4 +11,14 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("ekansh.plugins")
+require("lazy").setup({ { import = "ekansh.plugins" }, { import = "ekansh.plugins.lsp" } }, {
+    checker = {
+        enabled = true,
+        notify = false,
+    },
+    change_detection = {
+        notify = false,
+    },
+})
+
+
