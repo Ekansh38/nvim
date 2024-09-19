@@ -2,14 +2,13 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
-keymap.set("i", "jk", "<ESC>", {desc = "Exit insert mode with jk"})
+keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- Increment/Decrement Numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" })
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
-
 
 -- Window Management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
@@ -27,10 +26,8 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Basic Indent Formating
 
-keymap.set("n", "<leader>w", "gg =G", { desc = "Indents the file correctly" })
+keymap.set("n", "<leader>ic", "gg =G", { desc = "Indents the file correctly" })
 
 -- File Tree
 
 keymap.set("n", "-", "<cmd>Oil<CR>", { desc = "Opens File Tree" })
-
-
